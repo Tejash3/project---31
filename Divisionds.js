@@ -1,0 +1,20 @@
+class Divisons {
+    constructor(x,y,w,h){
+    var options = {
+        isStactic : true
+    }
+    this.body = Bodies.rectangle(x,y,w,h,options);
+    this.w = w;
+    this.h = h;
+    World.add(world,this.body);
+}
+display(){
+    var pos = this.body.position;
+    rectMode(CENTER)
+    fill("white");
+    rect(pos.x,pos.y,this.w,this.h)
+}
+}
+if (frameCount%60 === 0){
+    particales.push(new Particle(random(width/2-10,width / 2+10),10,10));    
+}
